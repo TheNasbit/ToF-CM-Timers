@@ -1,0 +1,167 @@
+{
+  "id": "ntp.strike.b13.challenge.immob",
+  "name": "Temple of Febe CM\nImmobilize Shadows",
+  "category": "Strikes",
+  "description": "• Type: Hotkey ( Trigger Key 0 )\n• Skip 1s: Hotkey ( Trigger Key 1 )\n• Automatically begins on fight start.\n• Activate Hotkey on 80/50% when add in split dies.",
+  "author": "\nNasbit.3240",
+  "map": 1520,
+  "reset": { 
+    "position": [-0.106, -209.428], 
+    "radius": 20,
+    "requireEntry": true, "requireOutOfCombat": true
+  },
+  "phases": [
+    {
+      "name": "Temple of Febe - Phase 1",
+      "start": { 
+        "position": [-0.242, -101.378], "radius": 60,
+        "requireEntry": true, "requireCombat": true
+      },
+      "finish": { "position": [-0.242, -101.378], "radius": 60,
+        "type": "key", "keyBind": "0",
+        "requireEntry": true
+      },
+      "actions": [
+        {
+          "name": "Skip Time",
+          "type": "skipTime",
+          "sets": ["boss"],
+          "time": 1.0,
+          "trigger": { "position": [-0.242, -101.378], "radius": 60,
+            "type": "key", "keyBind": "1",
+            "requireEntry": true
+          }
+        }
+      ],
+      //Alerts
+      "alerts": [
+        //Phase 1 Notification
+        { "alert": "Phase 1 - Immobilize", 
+          "alertDuration": 4, "timestamps": [0]
+        },
+        
+        // ----------------------------------------------------------------
+        // Special Timers
+        // Shadow Immob Boss
+        {
+          "warning": "Immob soon", "alert": "Focus Shadows / Immob", "fillColor": [100, 50, 255, 0],
+          "warningDuration": 3, "alertDuration": 6, "timestamps": [78, 145, 212, 279, 346],
+          "set": "boss"
+        },
+        // Shadow Immob Add
+        {
+          "warning": "Immob soon", "alert": "Focus Shadows / Immob", "fillColor": [100, 50, 255, 0],
+          "warningDuration": 3, "alertDuration": 6, "timestamps": [52, 232],
+          "set": "add"
+        }
+      ]
+    },
+    {
+      "name": "Temple of Febe - Phase 2",
+      "start": { 
+        "position": [-0.242, -101.378], "radius": 60,
+        "requireEntry": true, "requireCombat": true
+      },
+      "finish": { "position": [-0.242, -101.378], "radius": 60,
+        "type": "key", "keyBind": "0",
+        "requireEntry": true
+      },
+      "actions": [
+        {
+          "name": "Skip Time",
+          "type": "skipTime",
+          "sets": ["boss"],
+          "time": 1.0,
+          "trigger": { "position": [-0.242, -101.378], "radius": 60,
+            "type": "key", "keyBind": "1",
+            "requireEntry": true
+          }
+        }
+      ],
+      //Alerts
+      "alerts": [
+        //Phase 2 Notification
+        { "alert": "Phase 2 - Immobilize", 
+          "alertDuration": 4, "timestamps": [0]
+        },
+
+        // ----------------------------------------------------------------
+        // Special Timers
+        // Shadow Immob Boss
+        {
+          "warning": "Immob soon", "alert": "Focus Shadows / Immob", "fillColor": [100, 50, 255, 0],
+          "warningDuration": 3, "alertDuration": 6, "timestamps": [71, 138, 205, 272, 339, 406],
+          "set": "boss"
+        },
+        // Shadow Immob Add
+        {
+          "warning": "Immob soon", "alert": "Focus Shadows / Immob", "fillColor": [100, 50, 255, 0],
+          "warningDuration": 3, "alertDuration": 6, "timestamps": [86, 206, 326],
+          "set": "add"
+        }
+      ]
+    },
+    {
+      "name": "Temple of Febe - Phase 3",
+      "start": { 
+        "position": [-0.242, -101.378], "radius": 60,
+        "requireEntry": true, "requireCombat": true
+      },
+      "finish": { "position": [-0.242, -101.378], "radius": 60,
+        "type": "key", "keyBind": "0",
+        "requireEntry": true
+      },
+      "actions": [
+        {
+          "name": "Skip Time",
+          "type": "skipTime",
+          "sets": ["boss"],
+          "time": 1.0,
+          "trigger": { "position": [-0.242, -101.378], "radius": 60,
+            "type": "key", "keyBind": "1",
+            "requireEntry": true
+          }
+        }
+      ],
+      //Alerts
+      "alerts": [
+        //Phase 3 Notification
+        { "alert": "Phase 3 - Immobilize", 
+          "alertDuration": 4, "timestamps": [0]
+        },
+
+        // ----------------------------------------------------------------
+        // Special Timers
+        // Shadow Immob Boss
+        {
+          "warning": "Immob soon", "alert": "Focus Shadows / Immob", "fillColor": [100, 50, 255, 0],
+          "warningDuration": 3, "alertDuration": 6, "timestamps": [78, 145, 212, 279, 346],
+          "set": "boss"
+        },
+        // Shadow Immob Add
+        {
+          "warning": "Immob soon", "alert": "Focus Shadows / Immob", "fillColor": [100, 50, 255, 0],
+          "warningDuration": 3, "alertDuration": 6, "timestamps": [52, 232],
+          "set": "add"
+        }
+      ]
+    },
+    {
+      "name": "Temple of Febe - Phase 4",
+      "start": { 
+        "position": [-0.242, -101.378], "radius": 60,
+        "requireEntry": true, "requireCombat": true
+      },
+      "finish": { "position": [-0.242, -101.378], "radius": 60,
+        "requireEntry": true, "requireOutOfCombat": true
+      },
+      //Alerts
+      "alerts": [
+        //Phase 4 Notification
+        { "alert": "Phase 4 - 10%", 
+          "alertDuration": 4, "timestamps": [0]
+        }
+      ]
+    }
+  ]
+}

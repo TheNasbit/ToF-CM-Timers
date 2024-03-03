@@ -1,0 +1,32 @@
+{
+  "id": "ntp.strike.b13.challenge.enrage",
+  "name": "Temple of Febe CM\nEnrage Timer",
+  "category": "Strikes",
+  "description": "• Automatically begins on fight start.\n• Shows Enrage Timer",
+  "author": "\nNasbit.3240",
+  "map": 1520,
+  "reset": { 
+    "position": [-0.106, -209.428], 
+    "radius": 20,
+    "requireEntry": true, "requireOutOfCombat": true
+  },
+  "phases": [
+    {
+      "name": "Temple of Febe - Enrage",
+      "start": { 
+        "position": [-0.242, -101.378], "radius": 60,
+        "requireEntry": true, "requireCombat": true
+      },
+      "alerts": [
+        // Enrage Timer
+        { "alert": "ToF CM - Enrage Timer", 
+          "alertDuration": 4, "timestamps": [0]
+        },
+        {
+          "warning": "Enrage soon!", "fillColor": [255, 25, 25, 0],
+          "warningDuration": 60, "timestamps": [600]
+        }
+      ]
+    }
+  ]
+}
