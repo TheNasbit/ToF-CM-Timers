@@ -373,6 +373,44 @@
         //Phase 4 Notification
         { "alert": "Phase 4 - 10%", 
           "alertDuration": 4, "timestamps": [0]
+        },
+        // ----------------------------------------------------------------
+        // Add Mechanics
+        // Regret (Green)
+        {
+          "warning": "Green soon...", "alert": "Green now!", "fillColor": [0, 175, 0, 0],
+          "warningDuration": 9.5, "alertDuration": 5, "timestamps": [16, 46, 76, 106],
+          "set": "add"
+        },
+        // Despair (Spread)
+        {
+          "warning":"Spread soon...", "alert":"Spread now!", "fillColor": [240, 170, 0, 0],
+          "warningDuration": 9.5, "alertDuration": 5, "timestamps": [6, 36, 66, 96],
+          "set": "add"
+        },
+        // Envy (Wall Ad)
+        {
+          "warning": "Wall (Add!) soon...", "alert":"Wall (Add)", "fillColor": [150, 0, 255, 0],
+          "warningDuration": 9.5, "alertDuration": 10, "timestamps": [12, 42, 72, 102],
+          "set": "add"
+        },
+        // Malice (Shadows / Tether)
+        {
+          "warning": "Shadows soon...", "alert": "Shadows!", "fillColor": [0, 50, 255, 0],
+          "warningDuration": 9.5, "alertDuration": 5, "timestamps": [31, 61, 91, 121],
+          "set": "add"
+        },
+        // Gluttony (Orbs)
+        {
+          "warning": "Orbs soon", "alert": "Collect Orbs!", "fillColor": [100, 155, 255, 0],
+          "warningDuration": 4, "alertDuration": 10, "timestamps": [26, 56, 86, 116],
+          "set": "add"
+        },
+        // Rage (AoE Slam Ad)
+        {
+          "warning": "AoE from Add soon...", "alert": "AoE from Add!", "fillColor": [255, 100, 50, 0],
+          "warningDuration": 9.5, "alertDuration": 5, "timestamps": [21, 51, 81, 111],
+          "set": "add"
         }
       ]
     }
